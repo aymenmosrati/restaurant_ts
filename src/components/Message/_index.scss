@@ -1,0 +1,18 @@
+@use "../../assets/scss/utilities" as *;
+
+.message {
+  @include small3;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  gap: 5px;
+  &.success {
+    color: $system-success;
+  }
+  &.warning {
+    color: $system-warning;
+  }
+  &.error {
+    color: $system-danger;
+  }
+}
