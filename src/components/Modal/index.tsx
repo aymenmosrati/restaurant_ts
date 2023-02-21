@@ -1,19 +1,19 @@
 import React, { useEffect, useRef } from "react";
-import { useDispatch } from "react-redux";
 import { showModal } from "../../store/modalSlice";
+import { useAppDispatch } from "../../utilities/hooks";
 import "./_index.scss";
 
 type ModaleProps = {
-  children: string;
+  children: any;
 };
 
 const Modale = ({ children }: ModaleProps) => {
-  let dispatch = useDispatch();
-  let menuRef = useRef();
+  let dispatch = useAppDispatch();
+  let menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let handler = (event: React.MouseEvent<HTMLButtonElement>) => {
-      if (!menuRef?.current?.contains(event.target)) {
+    let handler = (event: MouseEvent) => {
+      if (!menuRef?.current?.contains(event.target as Node)) {
         dispatch(showModal(false));
       }
     };

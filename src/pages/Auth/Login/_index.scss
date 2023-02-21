@@ -1,0 +1,123 @@
+@use "../../../assets/scss/utilities" as *;
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  .login-design {
+    width: 40%;
+    height: 100vh;
+    background: #077777;
+    position: relative;
+    .login-design-dot1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .login-design-dot2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .login-design-description {
+      @include heading5;
+      color: $typography-text2;
+      padding-top: 25%;
+      padding-left: 18px;
+      padding-bottom: 126px;
+      text-align: center;
+    }
+  }
+  .login-form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    .login-form-title {
+      @include heading7;
+      color: $typography-text1;
+      padding-bottom: 10px;
+    }
+    .login-form-description {
+      @include body2;
+      color: $typography-text3;
+      padding-bottom: 25px;
+    }
+    .login-form-email {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-bottom: 15px;
+    }
+    .login-form-password {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-bottom: 27px;
+    }
+    .remember-forget-pass {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 25px;
+      .remember-me {
+        display: flex;
+        align-items: center;
+      }
+      .forget-password {
+        color: $Primary-green;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .verify-recaptcha {
+      padding-bottom: 25px;
+    }
+    .login-form-description-help {
+      @include small1;
+      color: $typography-text3;
+      padding-top: 25px;
+      .login-form-description-help-email {
+        color: $Primary-green;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  // .login-form {
+  //   padding-top: 30px;
+  //   padding-bottom: 30px;
+  // }
+}
+
+@media screen and (max-width: 750px) {
+  .login-design {
+    display: none;
+  }
+  .login-form-title {
+    text-align: center;
+  }
+  .login-form-description {
+    text-align: center;
+  }
+  .login-form-description-help {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .login-form {
+    padding: 70px 15px;
+  }
+  .login-form-password {
+    padding-bottom: 10px !important;
+  }
+  .remember-forget-pass {
+    flex-direction: column-reverse;
+    .forget-password {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

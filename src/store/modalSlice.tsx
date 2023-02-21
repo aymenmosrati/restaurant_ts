@@ -1,6 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const initialState = {
+export type modalType = {
+  showPopup: boolean;
+};
+const initialState: modalType = {
   showPopup: false,
 };
 
@@ -8,7 +11,7 @@ const modalSlice = createSlice({
   name: "modal",
   initialState,
   reducers: {
-    showModal: (state, action) => {
+    showModal: (state, action: PayloadAction<boolean>) => {
       state.showPopup = action.payload;
     },
   },
