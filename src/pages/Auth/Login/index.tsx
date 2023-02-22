@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import * as Yup from "yup";
 import GoogleReCAPTCHA from "../../../components/ReCAPTCHA";
 import Checkbox from "../../../components/Checkbox";
 import Message from "../../../components/Message";
@@ -15,27 +16,24 @@ import "./_index.scss";
 import { userTypes } from "../../../types/User.types";
 import { useAppDispatch, useAppSelector } from "../../../utilities/hooks";
 
-
 const initialValues = {
   email: "",
   password: "",
 } as userTypes;
+
+const LogInSchema = Yup.object().shape({
+  email: Yup.string()
+    .email("Invalid email format")
+    .required("Please enter your email address"),
+  password: Yup.string()
+    .required("Please enter your password")
+    .min(8, "It must consist of at least 8 characters."),
+});
+
 const onSubmit = (values: userTypes) => {
   console.log("form data", values);
 };
 
-const validate = (values: userTypes) => {
-  let errors = {} as userTypes;
-  if (!values.email) {
-    errors.email = "Please enter your email address";
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-    errors.email = "Invalid email format";
-  }
-  if (!values.password) {
-    errors.password = "Please enter your password";
-  }
-  return errors;
-};
 const Login = () => {
   const { showPassLogin, newPass } = useAppSelector((state) => state.auth);
   const { showPopup } = useAppSelector((state) => state.modal);
@@ -43,7 +41,7 @@ const Login = () => {
   const formik = useFormik({
     initialValues,
     onSubmit,
-    validate,
+    validationSchema: LogInSchema,
   });
   return (
     <>

@@ -7,3 +7,8 @@ export type userPassaType = {
 };
 
 export type userTypes = userEmailTypes & userPassaType;
+
+export type newPassType = {
+  newPassword: string;
+  newPasswordAgain: string;
+};

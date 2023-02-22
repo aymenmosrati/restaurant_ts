@@ -3,6 +3,7 @@ import "./_index.scss";
 import ICError from "../../assets/img/IcError.svg";
 import ICSuccess from "../../assets/img/IcSuccess.svg";
 import ICWarning from "../../assets/img/IcWarning.svg";
+import IcNormale from "../../assets/img/IcNormale.svg";
 
 type MessageProps = {
   text: string;
@@ -19,6 +20,8 @@ const Message = (props: MessageProps) => {
               ? `${ICError}`
               : props.status === "success"
               ? `${ICSuccess}`
+              : props.status === "normal"
+              ? `${IcNormale}`
               : `${ICWarning}`
           }
           alt={`IC${props.status}`}
