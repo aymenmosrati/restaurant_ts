@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .header-title {
+  }
+
+  .header-compte {
+    
+    .header-compte-notif {
+      display: flex;
+      flex-direction: column;
+    }
+    .header-compte-info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

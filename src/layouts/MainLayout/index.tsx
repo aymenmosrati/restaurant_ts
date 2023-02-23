@@ -1,13 +1,13 @@
+import Header from "./Header";
+import SideBar from "./SideBar";
 import "./_index.scss";
 
-type MainLayoutProps = {
-  children: any;
-};
-
-const MainLayout = ({ children }: MainLayoutProps) => {
+const MainLayout = () => {
   return (
-    <div>
-      <div>{children}</div>
+    <div className="MainLayout">
+      <SideBar />
+      <Header />
+      {/* <div>{children}</div> */}
     </div>
   );
 };

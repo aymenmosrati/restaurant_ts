@@ -1,9 +1,10 @@
-import SideBar from "../../layouts/MainLayout/SideBar";
+import MainLayout from "../../layouts/MainLayout";
+
 
 const index = () => {
   return (
     <div>
-      <SideBar />
+      <MainLayout />
     </div>
   );
 };
