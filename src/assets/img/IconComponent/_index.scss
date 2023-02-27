@@ -16,6 +16,10 @@
   border: none;
 }
 
-.AngleDown {
-  fill: rgb(244, 55, 55);
+.sideBar-link-angleDown {
+  margin-left: auto;
+  margin-right: 25px;
+}
+.rotate-angleDown {
+  transform: rotate(180deg);
 }

@@ -9,7 +9,6 @@ import Menu8 from "../assets/img/IconMenu/Menu8.svg";
 import Menu9 from "../assets/img/IconMenu/Menu9.svg";
 import Menu10 from "../assets/img/IconMenu/Menu10.svg";
 import Menu11 from "../assets/img/IconMenu/Menu11.svg";
-import Menu12 from "../assets/img/IconMenu/Menu12.svg";
 
 export default {
   // HEADERS_API: {
@@ -35,6 +34,12 @@ export default {
       url: "/Orders",
       type: "route",
       permission: false,
+      angleDown: true,
+      child: [
+        { id: 1.0, name: "Wait for acceptance" },
+        { id: 1.1, name: "Active Orders" },
+        { id: 1.2, name: "Past Orders" },
+      ],
     },
     {
       id: 2,
@@ -43,6 +48,12 @@ export default {
       url: "/Menu Operations",
       type: "route",
       permission: false,
+      angleDown: true,
+      child: [
+        { id: 2.0, name: "Menu" },
+        { id: 2.1, name: "Material" },
+        { id: 2.2, name: "Options" },
+      ],
     },
     {
       id: 3,
@@ -51,6 +62,14 @@ export default {
       url: "/Restaurant Info",
       type: "route",
       permission: false,
+      angleDown: true,
+      child: [
+        { id: 3.0, name: "General Information" },
+        { id: 3.1, name: "financial information" },
+        { id: 3.2, name: "User operations" },
+        { id: 3.3, name: "Point of sale integration" },
+        { id: 3.4, name: "documents" },
+      ],
     },
     {
       id: 4,
@@ -67,6 +86,11 @@ export default {
       url: "/Accounting",
       type: "route",
       permission: false,
+      angleDown: true,
+      child: [
+        { id: 5.0, name: "Payment schedule" },
+        { id: 5.1, name: "Invoices" },
+      ],
     },
     {
       id: 6,
