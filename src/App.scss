@@ -9,3 +9,22 @@
 .App {
   font-family: "Rubik", sans-serif;
 }
+
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #077777; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #077777; 
+}

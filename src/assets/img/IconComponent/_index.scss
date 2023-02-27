@@ -1,3 +1,4 @@
+@use "../../../assets/scss/utilities" as *;
 .login-logo {
   width: 35%;
   height: 6%;
@@ -17,5 +18,10 @@
 }
 
 .AngleDown {
-  fill: rgb(244, 55, 55);
+  fill: $Primary-green;
+  cursor: pointer;
+}
+.logout-link-close {
+  fill: $Primary-green;
+  cursor: pointer;
 }

@@ -35,7 +35,7 @@ const ForgotPassword = () => {
     validate,
   });
   return (
-    <Modal>
+    <Modal className="ForgotPassword">
       <div className="modale-title">
         <p className="modale-title-name">Forgot Password</p>
         <span

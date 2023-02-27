@@ -1,13 +1,18 @@
 import React, { useEffect, useRef } from "react";
-import { showModal } from "../../store/modalSlice";
+import {
+  closeLogOut,
+  closeNotification,
+  showModal,
+} from "../../store/modalSlice";
 import { useAppDispatch } from "../../utilities/hooks";
 import "./_index.scss";
 
 type ModaleProps = {
   children: any;
+  className: string;
 };
 
-const Modale = ({ children }: ModaleProps) => {
+const Modale = ({ children, className }: ModaleProps) => {
   let dispatch = useAppDispatch();
   let menuRef = useRef<HTMLDivElement>(null);
 
@@ -15,6 +20,8 @@ const Modale = ({ children }: ModaleProps) => {
     let handler = (event: MouseEvent) => {
       if (!menuRef?.current?.contains(event.target as Node)) {
         dispatch(showModal(false));
+        dispatch(closeLogOut(false));
+        dispatch(closeNotification(false));
       }
     };
     document.addEventListener("mousedown", handler);
@@ -24,7 +31,7 @@ const Modale = ({ children }: ModaleProps) => {
   });
   return (
     <div className="modal">
-      <div ref={menuRef} className="modal-content">
+      <div ref={menuRef} className={`${className}-modal-content`}>
         {children}
       </div>
     </div>

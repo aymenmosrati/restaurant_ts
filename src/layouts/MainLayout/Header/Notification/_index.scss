@@ -1,0 +1,99 @@
+@use "../../../../assets/scss/utilities" as *;
+.modal-close-notif {
+  position: absolute;
+  top: -45px;
+  right: 246px;
+  width: 36px;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+  }
+  .icon-notification {
+    &:hover {
+      rotate: (10deg);
+    }
+  }
+}
+
+.modal-notification-content {
+  .modal-notification-title {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #f4f4f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    .modal-notification-title-name {
+      @include bold-body1;
+      color: $typography-text1;
+    }
+    .modale-notification-close {
+      font-size: 32px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .all-notification {
+    .message-notif {
+      width: 100%;
+      height: 84px;
+      border-bottom: 1px solid #f4f4f6;
+      padding: 0 8px 0 24px;
+      .message-notif-close {
+        font-size: 24px;
+        color: $Primary-green;
+        float: right;
+        // display: flex;
+        // justify-content: flex-end;
+        // height: 20px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .message-notif-title {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 4px 4px 0;
+        .message-notif-title-name {
+          @include bold-small2;
+          color: $typography-text1;
+          // text-align: center;
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          .icon-Warning {
+            width: 20px;
+            height: 20px;
+            background: #ffc200;
+            border-radius: 50%;
+            opacity: 0.3;
+          }
+          .icon-error {
+            width: 20px;
+            height: 20px;
+            background:#FCE8E9;
+            border-radius: 50%;
+            // opacity: 0.3;
+          }
+        }
+        .message-notif-title-date {
+          @include small4;
+          color: $typography-text4;
+        }
+      }
+      .message-notif-content {
+        @include small2;
+        color: $typography-text3;
+      }
+    }
+  }
+}
