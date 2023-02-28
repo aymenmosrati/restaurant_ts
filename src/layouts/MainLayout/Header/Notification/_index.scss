@@ -80,7 +80,7 @@
           .icon-error {
             width: 20px;
             height: 20px;
-            background:#FCE8E9;
+            background: #fce8e9;
             border-radius: 50%;
             // opacity: 0.3;
           }
@@ -95,5 +95,15 @@
         color: $typography-text3;
       }
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal-close-notif {
+    display: none;
+  }
+  .modal-notification-content {
+    width: 100%;
+    height: 100%;
   }
 }
