@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import {
   closeLogOut,
   closeNotification,
+  closeSidebar,
   showModal,
 } from "../../store/modalSlice";
 import { useAppDispatch } from "../../hooks/hooksRedux";
@@ -22,6 +23,7 @@ const Modale = ({ children, className }: ModaleProps) => {
         dispatch(showModal(false));
         dispatch(closeLogOut(false));
         dispatch(closeNotification(false));
+        dispatch(closeSidebar(false));
       }
     };
     document.addEventListener("mousedown", handler);
@@ -30,7 +32,7 @@ const Modale = ({ children, className }: ModaleProps) => {
     };
   });
   return (
-    <div className="modal">
+    <div className="modal open-sidebar">
       <div ref={menuRef} className={`${className}-modal-content`}>
         {children}
       </div>

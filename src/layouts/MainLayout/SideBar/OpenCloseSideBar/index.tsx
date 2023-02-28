@@ -1,19 +1,10 @@
 import useWindowSize from "../../../../hooks/useWindowSize";
-import { ReactComponent as CloseIcon } from "../../../../assets/img/close.svg";
+import IcTrigger from "../../../../components/IcTrigger";
+import SideBar from "../";
 const CloseSidebarTrigger = () => {
-  // const dispatch = useDispatch();
   const { width } = useWindowSize();
-
-  if (width >= 1090) return null;
-
-  return (
-    <div
-      className="close_sidebar_trigger"
-      // onClick={() => dispatch(closeSidebar())}
-    >
-      <CloseIcon />
-    </div>
-  );
+  if (width >= 1090) return <SideBar />;
+  return <IcTrigger className="close-sidebar-trigger" isOpen={true} />;
 };
 
 export default CloseSidebarTrigger;

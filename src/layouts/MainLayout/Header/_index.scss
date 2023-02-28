@@ -7,7 +7,9 @@
   padding: 0px 40px;
   .header-title {
   }
-
+  .header-compte-info-logo-open {
+    padding-right: -10px;
+  }
   .header-compte {
     display: flex;
     align-items: center;
@@ -39,8 +41,21 @@
     align-items: center;
     &:hover {
       cursor: pointer;
-      // border: 1px solid #077777;
       background: #ebe9e9;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    justify-content: flex-end;
+    padding-left: 10px;
+    padding-right: 32px;
+    .header-title {
+      display: none;
+    }
+    .header-compte-info {
+      padding-left: 0 !important;
     }
   }
 }
