@@ -88,3 +88,9 @@
     background: rgba($color: $typography-text4, $alpha: 0.2);
   }
 }
+
+@media screen and (max-width: 1090px) {
+  .sideBar {
+    padding-top: 30px !important;
+  }
+}
