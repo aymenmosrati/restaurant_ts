@@ -1,3 +1,4 @@
+@use "../../../assets/scss/utilities" as *;
 .login-logo {
   width: 35%;
   height: 6%;
@@ -14,4 +15,22 @@
 .eyeGlobal {
   width: 30px;
   border: none;
+}
+
+.AngleDown {
+  fill: $Primary-green;
+  cursor: pointer;
+}
+.logout-link-close {
+  fill: $Primary-green;
+  cursor: pointer;
+}
+
+.sideBar-link-angleDown {
+  margin-left: auto;
+  margin-right: 25px;
+}
+.rotate-angleDown {
+  transform: rotate(-180deg);
+  transition-duration: 0.5s;
 }

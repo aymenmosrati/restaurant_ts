@@ -1,0 +1,46 @@
+@use "../../../assets/scss/utilities" as *;
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  .header-title {
+  }
+
+  .header-compte {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .header-compte-notif {
+      cursor: pointer;
+    }
+    .header-compte-info {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+    }
+    .header-compte-info-name {
+      @include bold-small1;
+      color: #343b4a;
+    }
+    .header-compte-info-role {
+      @include small1;
+      color: #8c94a4;
+    }
+  }
+  .header-AngleDown {
+    width: 36px;
+    height: 36px;
+    background: #fafafa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      // border: 1px solid #077777;
+      background: #ebe9e9;
+    }
+  }
+}

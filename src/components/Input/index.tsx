@@ -6,7 +6,7 @@ import {
 import "./_index.scss";
 import Visible from "../../assets/img/IconComponent/Visible";
 import Hidden from "../../assets/img/IconComponent/Hidden";
-import { useAppDispatch, useAppSelector } from "../../utilities/hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks/hooksRedux";
 
 type InputProps = {
   type: "password" | "text" | "email";
