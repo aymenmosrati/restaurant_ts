@@ -25,3 +25,12 @@
   fill: $Primary-green;
   cursor: pointer;
 }
+
+.sideBar-link-angleDown {
+  margin-left: auto;
+  margin-right: 25px;
+}
+.rotate-angleDown {
+  transform: rotate(-180deg);
+  transition-duration: 0.5s;
+}

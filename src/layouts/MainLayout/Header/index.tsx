@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from "../../../utilities/hooks";
+import { useAppDispatch, useAppSelector } from "../../../hooks/hooksRedux";
 import { closeLogOut, closeNotification } from "../../../store/modalSlice";
 import AngleDown from "../../../assets/img/IconComponent/AngleDown";
 import notification from "../../../assets/img/notification.svg";

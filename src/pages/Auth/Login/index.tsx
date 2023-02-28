@@ -12,9 +12,9 @@ import Dots from "../../../assets/img/Dots.svg";
 import ForgotPassword from "../ForgotPassword";
 import { showModal } from "../../../store/modalSlice";
 import NewPassword from "../NewPassword";
-import "./_index.scss";
 import { userTypes } from "../../../types/User.types";
-import { useAppDispatch, useAppSelector } from "../../../utilities/hooks";
+import { useAppDispatch, useAppSelector } from "../../../hooks/hooksRedux";
+import "./_index.scss";
 
 const initialValues = {
   email: "",

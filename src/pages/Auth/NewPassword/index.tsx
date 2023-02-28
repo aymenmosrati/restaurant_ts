@@ -5,7 +5,7 @@ import Input from "../../../components/Input";
 import Label from "../../../components/Label";
 import Message from "../../../components/Message";
 import { newPassType } from "../../../types/User.types";
-import { useAppSelector } from "../../../utilities/hooks";
+import { useAppSelector } from "../../../hooks/hooksRedux";
 
 const initialValues = {
   newPassword: "",

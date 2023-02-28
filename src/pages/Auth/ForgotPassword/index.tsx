@@ -9,7 +9,7 @@ import Message from "../../../components/Message";
 import GoogleReCAPTCHA from "../../../components/ReCAPTCHA";
 import { newPassword } from "../../../store/authSlice";
 import { userEmailTypes } from "../../../types/User.types";
-import { useAppDispatch } from "../../../utilities/hooks";
+import { useAppDispatch } from "../../../hooks/hooksRedux";
 
 const ForgotPassword = () => {
   const initialValues = {

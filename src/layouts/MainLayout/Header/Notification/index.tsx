@@ -1,5 +1,5 @@
 import { closeNotification } from "../../../../store/modalSlice";
-import { useAppDispatch } from "../../../../utilities/hooks";
+import { useAppDispatch } from "../../../../hooks/hooksRedux";
 import notification from "../../../../assets/img/notification.svg";
 import Modale from "../../../../components/Modal";
 import "./_index.scss";

@@ -2,7 +2,7 @@ import "./_index.scss";
 import Modale from "../../../../components/Modal";
 import logout from "../../../../assets/img/Sign-out.svg";
 import AngleDown from "../../../../assets/img/IconComponent/AngleDown";
-import { useAppDispatch } from "../../../../utilities/hooks";
+import { useAppDispatch } from "../../../../hooks/hooksRedux";
 import { closeLogOut } from "../../../../store/modalSlice";
 
 const Index = () => {

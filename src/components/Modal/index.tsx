@@ -4,7 +4,7 @@ import {
   closeNotification,
   showModal,
 } from "../../store/modalSlice";
-import { useAppDispatch } from "../../utilities/hooks";
+import { useAppDispatch } from "../../hooks/hooksRedux";
 import "./_index.scss";
 
 type ModaleProps = {
