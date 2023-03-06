@@ -1,6 +1,6 @@
 import "./_index.scss";
 
-const AngleDown = (props) => {
+const AngleDown = (props: { className: string }) => {
   const { ...rest } = props;
   return (
     <svg

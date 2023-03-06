@@ -1,5 +1,5 @@
 import "./_index.scss";
-const Logo = (props) => {
+const Logo = (props: { className: string }) => {
   const { ...rest } = props;
   return (
     <svg

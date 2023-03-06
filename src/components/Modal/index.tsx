@@ -9,7 +9,7 @@ import { useAppDispatch } from "../../hooks/hooksRedux";
 import "./_index.scss";
 
 type ModaleProps = {
-  children: any;
+  children: React.ReactNode;
   className: string;
 };
 
