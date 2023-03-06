@@ -3,15 +3,11 @@ import Home from "./Home";
 
 const index = () => {
   return (
-    <>
-      <div>
-        <MainLayout />
-      </div>
-
-      <div>
-        <Home />
-      </div>
-    </>
+    <div className="main-content">
+      <MainLayout>
+        <div className="home">{/* <Home /> */}hdziuehuihiuhnu uhuioh u hgu</div>
+      </MainLayout>
+    </div>
   );
 };
 

@@ -1,3 +1,4 @@
+import React from "react";
 import Modale from "../../components/Modal";
 import { useAppSelector } from "../../hooks/hooksRedux";
 import useWindowSize from "../../hooks/useWindowSize";
@@ -6,7 +7,11 @@ import SideBar from "./SideBar";
 import CloseSidebarTrigger from "./SideBar/OpenCloseSideBar";
 import "./_index.scss";
 
-const MainLayout = () => {
+type MainLayoutProps = {
+  children: React.ReactNode;
+};
+
+const MainLayout = ({ children }: MainLayoutProps) => {
   const { showSidebar } = useAppSelector((state) => state.modal);
   const { width } = useWindowSize();
   return (
