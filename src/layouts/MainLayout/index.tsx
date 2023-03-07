@@ -15,16 +15,19 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   const { showSidebar } = useAppSelector((state) => state.modal);
   const { width } = useWindowSize();
   return (
-    <div className="MainLayout">
-      {showSidebar && width < 1090 ? (
-        <Modale className="open-sidebar">
-          <SideBar />
-        </Modale>
-      ) : (
-        <CloseSidebarTrigger />
-      )}
-      <Header />
-    </div>
+    <>
+      <div className="MainLayout">
+        {showSidebar && width < 1090 ? (
+          <Modale className="open-sidebar">
+            <SideBar />
+          </Modale>
+        ) : (
+          <CloseSidebarTrigger />
+        )}
+        <Header />
+      </div>
+      <main className="content">{children}</main>
+    </>
   );
 };
 

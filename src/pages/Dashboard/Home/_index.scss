@@ -1,0 +1,114 @@
+@use "../../../assets/scss/utilities" as *;
+
+.home {
+  width: 100%;
+  height: 264px;
+  background: $Primary-green;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center²;
+  padding-left: 36px;
+  padding-right: 36px;
+
+  .home-description {
+    margin: auto;
+    @include heading9;
+    color: $typography-text2;
+
+    .home-description-top-res {
+      color: $Primary-yellow;
+    }
+  }
+}
+.home-search-category {
+  display: flex;
+  // align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  color: $typography-text1;
+  padding-top: 60px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  .home-select-city {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .country {
+      min-width: 264px;
+      padding: 15px 12px;
+      border-radius: 8px;
+      @include small1;
+    }
+  }
+  .home-open-switch-toggel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .open-title-switch-icon {
+      @include small2;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}
+
+.home-search-info {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  @include small1;
+  color: $typography-text1;
+  .active {
+    @include bold-small1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $Primary-green;
+  }
+  .home-search-by {
+    height: 70px;
+    border-bottom: 1px solid #f4f4f6;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-left: 24px;
+    cursor: pointer;
+  }
+  .home-info-search-statistique {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 32px;
+    .home-statistique-number-orders {
+      width: 246px;
+      height: 170px;
+      background: $transparent-soft-green;
+      border-radius: 15px;
+      opacity: 0.6;
+    }
+    .home-statistique-delivery-time {
+      width: 246px;
+      height: 170px;
+      background: $transparent-soft-yellow;
+      border-radius: 15px;
+      opacity: 0.6;
+    }
+    .home-statistique-total-turnover {
+      width: 246px;
+      height: 170px;
+      background: $transparent-soft-purple;
+      border-radius: 15px;
+      opacity: 0.6;
+    }
+    .home-statistique-average-amount {
+      width: 246px;
+      height: 170px;
+      background: $transparent-soft-pink;
+      border-radius: 15px;
+      opacity: 0.6;
+    }
+  }
+}

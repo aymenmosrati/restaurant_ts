@@ -1,13 +1,12 @@
 import MainLayout from "../../layouts/MainLayout";
 import Home from "./Home";
+import "./_index.scss";
 
 const index = () => {
   return (
-    <div className="main-content">
-      <MainLayout>
-        <div className="home">{/* <Home /> */}hdziuehuihiuhnu uhuioh u hgu</div>
-      </MainLayout>
-    </div>
+    <MainLayout>
+      <Home />
+    </MainLayout>
   );
 };
 
