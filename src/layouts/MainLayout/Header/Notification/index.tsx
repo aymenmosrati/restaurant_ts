@@ -30,87 +30,85 @@ const Index = () => {
             &times;
           </span>
         </div>
-        <div>
-          <div className="all-notification">
-            <div className="message-notif">
-              <span className="message-notif-close">&times;</span>
-              <div className="message-notif-title">
-                <div className="message-notif-title-name">
-                  <div className="icon-Warning"></div>
-                  <span>Alert Message</span>
-                </div>
-                <span className="message-notif-title-date">
-                  December 13, 10:38
-                </span>
+        <div className="all-notification">
+          <div className="message-notif">
+            <span className="message-notif-close">&times;</span>
+            <div className="message-notif-title">
+              <div className="message-notif-title-name">
+                <div className="icon-Warning"></div>
+                <span>Alert Message</span>
               </div>
-              <span className="message-notif-content">
-                Lorem ipsum dolar sit amet.
+              <span className="message-notif-title-date">
+                December 13, 10:38
               </span>
             </div>
+            <span className="message-notif-content">
+              Lorem ipsum dolar sit amet.
+            </span>
+          </div>
 
-            <div className="message-notif">
-              <div className="message-notif-close">&times;</div>
-              <div className="message-notif-title">
-                <div className="message-notif-title-name">
-                  <div className="icon-error"></div>
-                  <span>Alert Message</span>
-                </div>
-                <span className="message-notif-title-date">
-                  December 13, 10:38
-                </span>
+          <div className="message-notif">
+            <div className="message-notif-close">&times;</div>
+            <div className="message-notif-title">
+              <div className="message-notif-title-name">
+                <div className="icon-error"></div>
+                <span>Alert Message</span>
               </div>
-              <span className="message-notif-content">
-                Lorem ipsum dolar sit amet.
+              <span className="message-notif-title-date">
+                December 13, 10:38
               </span>
             </div>
+            <span className="message-notif-content">
+              Lorem ipsum dolar sit amet.
+            </span>
+          </div>
 
-            <div className="message-notif">
-              <span className="message-notif-close">&times;</span>
-              <div className="message-notif-title">
-                <div className="message-notif-title-name">
-                  <img src={IcSuccess} alt="IcSuccess" />
-                  <span>Alert Message</span>
-                </div>
-                <span className="message-notif-title-date">
-                  December 13, 10:38
-                </span>
+          <div className="message-notif">
+            <span className="message-notif-close">&times;</span>
+            <div className="message-notif-title">
+              <div className="message-notif-title-name">
+                <img src={IcSuccess} alt="IcSuccess" />
+                <span>Alert Message</span>
               </div>
-              <span className="message-notif-content">
-                Lorem ipsum dolar sit amet.
+              <span className="message-notif-title-date">
+                December 13, 10:38
               </span>
             </div>
+            <span className="message-notif-content">
+              Lorem ipsum dolar sit amet.
+            </span>
+          </div>
 
-            <div className="message-notif">
-              <span className="message-notif-close">&times;</span>
-              <div className="message-notif-title">
-                <div className="message-notif-title-name">
-                  <img src={IcWarning} alt="IcWarning" />
-                  <span>Alert Message</span>
-                </div>
-                <span className="message-notif-title-date">
-                  December 13, 10:38
-                </span>
+          <div className="message-notif">
+            <span className="message-notif-close">&times;</span>
+            <div className="message-notif-title">
+              <div className="message-notif-title-name">
+                <img src={IcWarning} alt="IcWarning" />
+                <span>Alert Message</span>
               </div>
-              <span className="message-notif-content">
-                Lorem ipsum dolar sit amet.
+              <span className="message-notif-title-date">
+                December 13, 10:38
               </span>
             </div>
+            <span className="message-notif-content">
+              Lorem ipsum dolar sit amet.
+            </span>
+          </div>
 
-            <div className="message-notif">
-              <span className="message-notif-close">&times;</span>
-              <div className="message-notif-title">
-                <div className="message-notif-title-name">
-                  <img src={IcError} alt="IcError" />
-                  <span>Alert Message</span>
-                </div>
-                <span className="message-notif-title-date">
-                  December 13, 10:38
-                </span>
+          <div className="message-notif">
+            <span className="message-notif-close">&times;</span>
+            <div className="message-notif-title">
+              <div className="message-notif-title-name">
+                <img src={IcError} alt="IcError" />
+                <span>Alert Message</span>
               </div>
-              <span className="message-notif-content">
-                Lorem ipsum dolar sit amet.
+              <span className="message-notif-title-date">
+                December 13, 10:38
               </span>
             </div>
+            <span className="message-notif-content">
+              Lorem ipsum dolar sit amet.
+            </span>
           </div>
         </div>
       </div>

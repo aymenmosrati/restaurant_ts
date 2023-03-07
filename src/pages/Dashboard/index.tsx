@@ -1,11 +1,12 @@
 import MainLayout from "../../layouts/MainLayout";
-
+import Home from "./Home";
+import "./_index.scss";
 
 const index = () => {
   return (
-    <div>
-      <MainLayout />
-    </div>
+    <MainLayout>
+      <Home />
+    </MainLayout>
   );
 };
 

@@ -11,6 +11,7 @@ const Header = () => {
     (state) => state.modal
   );
   const dispatch = useAppDispatch();
+  // <marquee behavior="scroll" direction="left"> Home page</marquee>
 
   return (
     <>

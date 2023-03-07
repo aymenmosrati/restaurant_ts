@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import auth from "./authSlice";
 import modal from "./modalSlice";
+import switchToggel from "./switchToggelSlice";
 
 const store = configureStore({
   reducer: {
     auth: auth,
     modal: modal,
+    switchToggel: switchToggel,
   },
 });
 
