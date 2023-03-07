@@ -1,8 +1,8 @@
+@use "../../assets/scss/utilities" as *;
 .switch {
   width: 49px;
   height: 28px;
   border-radius: 15px;
-  background: #57b97e;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -11,9 +11,11 @@
   cursor: pointer;
   &.left {
     justify-content: flex-start;
+    background: $background-bg1;
   }
   &.right {
     justify-content: flex-end;
+    background: $system-success;
   }
   .insid-Switch {
     height: 20px;
