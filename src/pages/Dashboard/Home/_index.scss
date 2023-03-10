@@ -22,7 +22,6 @@
 }
 .home-search-category {
   display: flex;
-  // align-items: center;
   flex-wrap: wrap;
   gap: 24px;
   color: $typography-text1;
@@ -59,6 +58,7 @@
   border-radius: 15px;
   @include small1;
   color: $typography-text1;
+  margin-bottom: 24px;
   .active {
     @include bold-small1;
     display: flex;
@@ -82,33 +82,57 @@
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 32px;
-    .home-statistique-number-orders {
+    .home-statistique {
       width: 246px;
       height: 170px;
-      background: $transparent-soft-green;
       border-radius: 15px;
-      opacity: 0.6;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      padding-left: 16px;
+      padding-right: 16px;
+      &.number-orders {
+        background: rgba($color: $transparent-soft-green, $alpha: 0.6);
+      }
+      &.delivery-time {
+        background: rgba($color: $transparent-soft-yellow, $alpha: 0.6);
+      }
+      &.total-turnover {
+        background: rgba($color: $transparent-soft-purple, $alpha: 0.6);
+      }
+      &.average-amount {
+        background: rgba($color: $transparent-soft-pink, $alpha: 0.6);
+      }
+      > img {
+        width: 50px;
+        height: 50px;
+      }
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        color: #343b4a;
+      }
+      > div {
+        display: flex;
+        justify-content: space-between;
+        > span {
+          font-weight: 600;
+          font-size: 24px;
+          color: #343b4a;
+        }
+      }
     }
-    .home-statistique-delivery-time {
-      width: 246px;
-      height: 170px;
-      background: $transparent-soft-yellow;
-      border-radius: 15px;
-      opacity: 0.6;
-    }
-    .home-statistique-total-turnover {
-      width: 246px;
-      height: 170px;
-      background: $transparent-soft-purple;
-      border-radius: 15px;
-      opacity: 0.6;
-    }
-    .home-statistique-average-amount {
-      width: 246px;
-      height: 170px;
-      background: $transparent-soft-pink;
-      border-radius: 15px;
-      opacity: 0.6;
-    }
+  }
+}
+
+.home-cards-info-restaurant-products {
+  display: flex;
+  .home-card-open-closed-products,
+  .home-card-popular-products-week {
+    width: 48%;
+    height: 414px;
+    background: #ffffff;
+    border-radius: 15px;
   }
 }
